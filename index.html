@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Teach & Tackle">
+	<!-- <meta http-equiv="Content-Security-Policy" content="
+		default-src 'self';
+		script-src 'self' 'unsafe-inline';
+		style-src 'self' https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css;
+		img-src 'self';
+		connect-src 'self';
+		font-src 'self' https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css;
+		frame-src 'none';
+		object-src 'none';
+	"> -->
+	<title>Teach & Tackle</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fontawesome.css" id="fontawesome" media="print">
+</head>
+<body>
+	<aside>
+		<div>
+			<img src="/logo.webp" alt="Logo" loading="lazy">
+		</div>
+		<hr>
+		<div>
+			<div class="strength">
+				<div>
+					<div>Mentor Others</div>
+					<div>
+						<i class="fa-solid fa-plus" tabindex="0"></i>
+						<i class="fa-solid fa-chevron-down" id="strength_collapse" tabindex="0"></i>
+					</div>
+				</div>
+				<div id="strength_content">
+					<div class="strength_subject">
+						<i class="fa-solid fa-circle"></i>
+						<p title="Logic and Mathematics (LOMA)">Logic and Mathematics (LOMA)</p>
+						<i class="fa-solid fa-xmark" tabindex="0"></i>
+					</div>
+					<div class="strength_subject">
+						<i class="fa-solid fa-circle"></i>
+						<p title="Database Application Development (DBAV)">Database Application Development (DBAV)</p>
+						<i class="fa-solid fa-xmark" tabindex="0"></i>
+					</div>
+				</div>
+			</div>
+			<div class="strength strength2">
+				<div>
+					<div>Knowledge Wishlist</div>
+					<div>
+						<i class="fa-solid fa-plus" tabindex="0"></i>
+						<i class="fa-solid fa-chevron-down" id="weakness_collapse" tabindex="0"></i>
+					</div>
+				</div>
+				<div id="weakness_content">
+					<div class="strength_subject">
+						<i class="fa-solid fa-circle"></i>
+						<p title="Mobile Application Development (MBAP)">Mobile Application Development (MBAP)</p>
+						<i class="fa-solid fa-xmark" tabindex="0"></i>
+					</div>
+					<div class="strength_subject">
+						<i class="fa-solid fa-circle"></i>
+						<p title="Network and Cloud Technology (NECT)">Network and Cloud Technology (NECT)</p>
+						<i class="fa-solid fa-xmark" tabindex="0"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="user" tabindex="0">
+			<div class="user_img"></div>
+			<p>Geng Yue</p>
+		</div>
+	</aside>
+
+	<main>
+		<div>
+			<div class="search" tabindex="0">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input type="search" placeholder="Search something..." tabindex="0" id="searchBar" autocomplete="off">
+				<div>Ctrl + F</div>
+			</div>
+			<div>
+				<input type="checkbox" id="related">
+				<label for="related" tabindex="0">Show related</label>
+			</div>
+		</div>
+		<nav class="tabs">
+			<input type="radio" id="explore" name="tabs" checked>
+			<label for="explore" tabindex="0">
+				<i class="fa-solid fa-rocket"></i>
+				<p>Explore</p>
+			</label>
+
+			<input type="radio" id="current" name="tabs" >
+			<label for="current" tabindex="0">
+				<i class="fa-solid fa-people-group"></i>
+				<p>Pairings</p>
+			</label>
+
+			<input type="radio" id="pending" name="tabs">
+			<label for="pending" tabindex="0">
+				<i class="fa-solid fa-hourglass-half"></i>
+				<p>Pending Pairings</p>
+			</label>
+
+			<input type="radio" id="schedule" name="tabs">
+			<label for="schedule" tabindex="0">
+				<i class="fa-solid fa-calendar-days"></i>
+				<p>My Schedule</p>
+			</label>
+
+			<div class="legend">
+				<div>Guiding</div>
+				<div>Learning</div>
+			</div>
+		</nav>
+		<br>
+		<hr>
+
+		<div class="student_container" id="explore_container" tabindex="-1">
+			<div class="student student1">
+				<div>
+					<i class="fa-solid fa-circle-user"></i>
+					<div>
+						<p>Alice Johnson</p>
+						<p>Alice_Johnson@student.tp.edu.sg</p>
+						<p>Diploma in Information Technology</p>
+					</div>
+				</div>
+				<div>
+					<div class="student_strength">ADEV</div>
+					<div class="student_strength">DBAV</div>
+					<div class="student_weakness">DSAG</div>
+					
+					<i class="fa-solid fa-link"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="student_container" id="current_container" tabindex="-1">
+			<div class="pair">
+				<span>Hide</span>
+				<div class="student">
+					<img src="/ppf.webp" alt="Profile picture">
+					<div>
+						<p>Geng Yue</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Information Technology</p>
+					</div>
+				</div>
+	
+				<i class="fa-solid fa-link"></i>
+	
+				<div class="student">
+					<i class="fa-solid fa-circle-user"></i>
+					<div>
+						<p>John Doe</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Applied Artificial Intelligence</p>
+					</div>
+				</div>
+
+				<div>	
+					<div class="module module_strength" title="Database Application Development (DBAV)">Database Application Development (DBAV)</div>
+					<div class="module module_weakness" title="Network and Cloud Technology (NECT)">Network and Cloud Technology (NECT)</div>
+				</div>
+					
+				<div>	
+					<div class="module module_weakness" title="Database Application Development (DBAV)">Database Application Development (DBAV)</div>
+					<div class="module module_strength" title="Network and Cloud Technology (NECT)">Network and Cloud Technology (NECT)</div>
+				</div>
+			</div>
+
+			<div class="pair">
+				<span>Hide</span>
+				<div class="student">
+					<img src="/ppf.webp" alt="Profile picture">
+					<div>
+						<p>Geng Yue</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Information Technology</p>
+					</div>
+				</div>
+	
+				<i class="fa-solid fa-link"></i>
+	
+				<div class="student">
+					<i class="fa-solid fa-circle-user"></i>
+					<div>
+						<p>Jane Doe</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Big Data & Analytics</p>
+					</div>
+				</div>
+
+				<div>	
+					<div class="module module_strength" title="Logic and Mathematics (LOMA)">Logic and Mathematics (LOMA)</div>
+				</div>
+					
+				<div>	
+					<div class="module module_weakness" title="Logic and Mathematics (LOMA)">Logic and Mathematics (LOMA)</div>
+				</div>
+			</div>
+
+			<div class="pair">
+				<span>Hide</span>
+				<div class="student">
+					<img src="/ppf.webp" alt="Profile picture">
+					<div>
+						<p>Geng Yue</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Information Technology</p>
+					</div>
+				</div>
+	
+				<i class="fa-solid fa-link"></i>
+	
+				<div class="student">
+					<i class="fa-solid fa-circle-user"></i>
+					<div>
+						<p>Joe Bloggs</p>
+						<p>Email@student.tp.edu.sg</p>
+						<p>Diploma in Big Data & Analytics</p>
+					</div>
+				</div>
+
+				<div>	
+					<div class="module module_weakness" title="Mobile App Development (MBAP)">Mobile App Development (MBAP)</div>
+				</div>
+					
+				<div>	
+					<div class="module module_strength" title="Mobile App Development (MBAP)">Mobile App Development (MBAP)</div>
+				</div>
+			</div>
+
+			<div id="empty">
+				<p>All pairs are hidden</p>
+				<button>Show all pairs</button>
+			</div>
+		</div>
+
+		<div class="student_container" id="pending_container" tabindex="-1">
+			<!-- TODO -->
+		</div>
+
+		<div class="student_container" id="schedule_container" tabindex="-1">
+			<div class="schedule_timings">
+				<div class="day_header"></div>
+			</div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+			<div class="schedule_day"></div>
+
+			<div class="event">
+				<div>John Doe</div> <!-- Name -->
+				<div>John_Doe@student.tp.edu.sg</div>
+				<div>
+					<div class="event_strength">DBAV</div> <!-- Time (Mentor) -->
+					<div class="event_weakness">NECT</div> <!-- Time (Learn) -->
+				</div>
+			</div>
+			<div class="event">
+				<div>Jane Doe</div> <!-- Name -->
+				<div>Jane_Doe@student.tp.edu.sg</div>
+				<div>
+					<div class="event_strength">LOMA</div>
+				</div>
+			</div>
+			<div class="event">
+				<div>Joe Bloggs</div> <!-- Name -->
+				<div>Joe_Bloggs@student.tp.edu.sg</div>
+				<div>
+					<div class="event_weakness">MBAP</div>
+				</div>
+			</div>
+			<div id="timeline"></div>
+		</div>
+	</main>
+
+	<div id="message">Request to be paired</div>
+
+	<div class="user_detailed" id="user">
+		<div></div>
+		<hr>
+		<div>
+			<p>Geng Yue</p>
+			<p>Geng_Yue@student.tp.edu.sg</p>
+			<p>Diploma in Information Technology</p>
+		</div>
+		
+		<hr>
+		<button tabindex="-1">Manage Availability</button>
+		<button tabindex="-1">Log out</button>
+	</div>
+
+	<div class="user_availability">
+		<i class="fa-solid fa-xmark"></i>
+		<p>My Available Timings</p>
+		<div>
+			<p>Legend: </p>
+			<div>
+				<input type="checkbox" disabled checked>
+				<p>Available</p>
+			</div>
+			<div>
+				<input type="checkbox" disabled>
+				<p>Unavailable</p>
+			</div>
+		</div>
+		<hr>
+		<div id="schedule_table"></div>
+	</div>
+
+	<div class="add_module" id="add_module">
+		<i class="fa-solid fa-xmark"></i>
+		<p>Add Module</p>
+		<form method="post" action=""> <!-- Link to backend to add module to database -->
+			<label for="type">Add to:</label>
+			<select id="type" required>
+				<option value="strength">Strength</option>
+				<option value="weakness">Weakness</option>
+			</select>
+
+			<label for="module_selection">Module:</label>
+			<select id="module_selection" required>
+				<option value="NIL" disabled selected>Select a module</option>
+			</select>
+
+			<button type="submit">Add</button>
+		</form>
+	</div>
+
+	<template id="popular_template">
+		<div class="student student1">
+			<div>
+				<i class="fa-solid fa-circle-user"></i>
+				<div>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+			<div>
+				<i class="fa-solid fa-link"></i>
+			</div>
+		</div>
+	</template>
+
+	<div class="confirmation">
+		<i class="fa-solid fa-exclamation-triangle"></i>
+		<p></p>
+		<div>
+			<button>Yes</button>
+			<button>No</button>
+		</div>
+	</div>
+
+	<div class="issues">
+		<div>
+			<img src="wifi icon.webp" alt="Wifi Icon">
+			Offline
+		</div>
+		<noscript>Javascript disabled</noscript>
+	</div>
+
+	<div class="blur" id="blur"></div>
+	<div class="spinner" id="spinner"></div>
+
+	<script src="index.js"></script>
+</body>
+</html>
