@@ -1162,7 +1162,7 @@ aside[sidebar-collapsed = "true"] .user {
     margin-top: auto;
 }
 aside[sidebar-collapsed = "true"] > div:nth-of-type(1) {
-    background: url("/images/favicon.webp");
+    background: url("images/favicon.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
